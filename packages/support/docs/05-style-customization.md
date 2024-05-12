@@ -19,7 +19,7 @@ If you don't find a hook class you're looking for, try not to hack around it, as
 For example, if you want to customize the color of the sidebar, you can inspect the sidebar element in your browser's developer tools, see that it uses the `fi-sidebar`, and then add CSS to your app like this:
 
 ```css
-.fi-sidebar {
+.fi-sidebar-nav {
     background-color: #fafafa;
 }
 ```
@@ -27,7 +27,7 @@ For example, if you want to customize the color of the sidebar, you can inspect 
 Alternatively, since Filament is built upon Tailwind CSS, you can use their `@apply` directive to apply Tailwind classes to Filament elements:
 
 ```css
-.fi-sidebar {
+.fi-sidebar-nav {
     @apply bg-gray-50 dark:bg-gray-950;
 }
 ```
@@ -35,7 +35,7 @@ Alternatively, since Filament is built upon Tailwind CSS, you can use their `@ap
 Occasionally, you may need to use the `!important` modifier to override existing styles, but please use this sparingly, as it can make your styles difficult to maintain:
 
 ```css
-.fi-sidebar {
+.fi-sidebar-nav {
     @apply bg-gray-50 dark:bg-gray-950 !important;
 }
 ```
@@ -43,7 +43,7 @@ Occasionally, you may need to use the `!important` modifier to override existing
 You can even apply `!important` to only specific Tailwind classes, which is a little less intrusive, by prefixing the class name with `!`:
 
 ```css
-.fi-sidebar {
+.fi-sidebar-nav {
     @apply !bg-gray-50 dark:!bg-gray-950;
 }
 ```
